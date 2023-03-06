@@ -2,6 +2,7 @@ import test from './test.css'
 
 const title = 'Title string';
 let condition = false;
+let alwaysTrue = true;
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       </h1>
 
       {condition ? (<IsTrue />) : (<IsFalse />)}
+
+      {alwaysTrue && <ImTrue />}
     </>
   );
 }
@@ -29,6 +32,12 @@ function IsTrue() {
 function IsFalse() {
   return (
     <h3>Im false!</h3>
+  );
+}
+
+function ImTrue() {
+  return (
+    <h4>Im always true!</h4>
   );
 }
 
