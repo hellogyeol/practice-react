@@ -1,6 +1,7 @@
 import List from './components/List';
 import Event from './components/Event';
 import State from './components/State';
+import Props from './components/Props';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <List />
       <Event />
       <State />
+      <Props />
     </>
   );
 }
